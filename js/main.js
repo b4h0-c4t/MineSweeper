@@ -11,9 +11,7 @@ const generateBasicField = (num, len) => {
 };
 
 const generateField = (num, x, y) => {
-  return generateBasicField(num, x * y).map((obj, x) => {
-    return obj;
-  });
+  return generateBasicField(num, x * y);
 };
 
 addEventListener('DOMContentLoaded', () => {
@@ -21,5 +19,5 @@ addEventListener('DOMContentLoaded', () => {
   const canvas = document.querySelector('#canvas');
   const ctx = canvas.getContext('2d');
 
-  console.log(generateField(10, 10, 10));
+  console.log(generateField(3, 2, 3));
 });
